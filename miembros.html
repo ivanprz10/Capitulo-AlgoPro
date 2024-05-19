@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIEMBROS</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<style>
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-color: black;
+        margin: 0; 
+        padding: 0;
+    }
+    
+    header {
+        border: 1px solid #ae0dce;
+        border-radius: 20px;
+        height: 300px;
+        margin: 5px;
+        text-align: right;
+        position: relative; 
+    }
+    
+    #logoo {
+        width: 300px;
+        height: 300px;
+        padding: 0; 
+        margin-left: auto; 
+        margin-right: 200px; 
+    }
+    
+    .titulo {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 80px;
+    }
+    
+    #titulo2 {
+        top: 120px;
+        left: 200px;
+    }   
+    
+    /* Estilos para la barra de navegación */
+    nav {
+        margin-top: 20px;
+        border: 1px solid #ae0dce;
+        border-radius: 20px;
+        text-align: center;
+        height: 70px;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin-top: 25px;
+    }
+    
+    li {
+        display: inline;
+        margin-right: 20px; /* Agregado */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        margin: 0px 100px 0px 10px;
+        transition: all 0.3s ease;
+
+    
+    
+    }
+    nav a:hover{
+        font-size: 25px;
+        color: #ae0dce;
+        }
+    
+    /* Estilos para el contenedor de imágenes */
+    .contenedor-imagenes {
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid #ae0dce;
+        border-radius: 10px;
+        display: flex; /* Mostrar imágenes en línea */
+        flex-wrap: wrap; /* Permitir que las imágenes se envuelvan si no caben en una línea */
+        justify-content: center; /* Centrar imágenes horizontalmente */
+    }
+    
+    /* Estilos para las imágenes */
+    .imagenes {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%; /* Cambiado a 50% para hacer círculos */
+        margin: 20px; /* Espacio entre imágenes */
+        transition: all 0.3s ease;
+    
+    }
+    .imagenes:hover{
+        transform: scale(1.1);
+    }
+    /* Estilos para el pie de página */
+    footer {
+        margin-top: 20px;
+        text-align: center;
+        color: #777;
+        background-color: #000000; /* Gris oscuro */
+        padding: 10px;
+        border-top: 1px solid  #ae0dce;
+        
+    }
+    .miembro {
+    text-align: center; /* Centrar el texto debajo de la imagen */
+}
+
+.nombre {
+    color: white;
+    font-size: 16px;
+}
+
+.nombre a {
+    color: white; /* Color del enlace */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+    
+    </style>
+    
+
+
+<body>
+  <header>
+    <img id="logoo" src="Assets/Miembros Del Capitulo/img miembros/logoAYP.jpg">
+    <h1 class="titulo">MIEMBROS DE NUESTRO </h1>
+    <h1 class="titulo" id="titulo2">EQUIPO</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="Assets/pags/miembros2.html">Miembros 2022-2023</a></li>
+      <li><a href="Miembros.html">Miembros 2024</a></li>
+      <li><a href="index.html">Inicio</a></li>
+
+    </ul>
+  </nav>
+  <div class="contenedor-imagenes">
+      <div class="miembro">
+          <a href="#">
+              <img class="imagenes" id="Ivan" src="Assets/Miembros Del Capitulo/img miembros/IVAN PEREZ.jpg">
+              <p class="nombre">Ivan Perez</p>
+          </a>
+      </div>
+      <div class="miembro">
+          <a href="">
+              <img class="imagenes" id="jessica" src="Assets/Miembros Del Capitulo/img miembros/JESSICA FLORES.jpg">
+              <p class="nombre">Jessica Flores</p>
+          </a>
+      </div>
+      <div class="miembro">
+          <a href="">
+              <img class="imagenes" id="aranxa" src="Assets/Miembros Del Capitulo/img miembros/ARANXA FERNANDEZ.jpg">
+              <p class="nombre">Aranxa Fernandez</p>
+          </a>
+      </div>
+      <div class="miembro">
+          <a href="">
+              <img class="imagenes" id="ricardo" src="Assets/Miembros Del Capitulo/img miembros/RICARDO SARAO.jpg">
+              <p class="nombre">Ricardo Sarao</p>
+          </a>
+      </div>
+      <div class="miembro">
+          <a href="">
+              <img class="imagenes" id="raul" src="Assets/Miembros Del Capitulo/img miembros/RAUL SANTIAGO.jpg">
+              <p class="nombre">Raul Santiago</p>
+          </a>
+      </div>
+      <div class="miembro">
+          <a href="">
+              <img class="imagenes" id="pedro" src="Assets/Miembros Del Capitulo/img miembros/LUIS PEDRO OLIVARES.jpg">
+              <p class="nombre">Luis Pedro Olivares</p>
+          </a>
+      </div>
+      <div class="miembro">
+        <a href="">
+            <img class="imagenes" id="Yael" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqafzhnwwYzuOTjTlaYMeQ7hxQLy_Wq8dnQg&s">
+            <p class="nombre">Yael Chavez</p>
+        </a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Capítulo Estudiantil</p>
+  </footer>
+</body>
+</html>
