@@ -126,6 +126,66 @@
     color: white; /* Color del enlace */
     text-decoration: none; /* Eliminar subrayado del enlace */
 }
+ /* Media queries para pantallas más pequeñas */
+ @media (max-width: 768px) {
+        header {
+            height: auto;
+            text-align: center;
+        }
+
+        #logoo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto; /* Centrar la imagen */
+        }
+
+        .titulo {
+            font-size: 30px;
+            top: 50px;
+            left: 0;
+            right: 0;
+        }
+
+        #titulo2 {
+            top: 100px;
+            left: 0;
+        }
+
+        nav {
+            height: auto;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .contenedor-imagenes {
+            flex-direction: column; /* Alinear imágenes en columna */
+        }
+
+        .imagenes {
+            height: 100px;
+            width: 100px;
+            margin: 10px; /* Reducir el espacio entre imágenes */
+        }
+
+        .nombre {
+            font-size: 14px;
+        }
+    }
     
     </style>
     
