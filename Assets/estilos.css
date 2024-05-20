@@ -105,7 +105,7 @@ footer {
         top: 10px;
     }
     nav li {
-        display: block;
+        display: inline;
         margin: 5px 0;
     }
     nav a {
@@ -115,7 +115,7 @@ footer {
         flex-direction: column;
     }
     section {
-        width: 95%;
+        width: 70%;
     }
     h1 {
         font-size: 24px;
