@@ -94,7 +94,7 @@ p{
 }
 #apk{
     border: 1px solid #ae0dce;
-    background-color: #ae0dce;
+    background-color: #000000;
 
     border-radius: 10px;
     padding: 5px;
@@ -123,6 +123,14 @@ p{
     text-align: justify;
 }
 
+.Tec-Run_new_version{
+    align-items: center;
+    text-align: center;
+}
+.imgversiones{
+    height: 300px;
+    margin-left: 250px;
+}
 
 /*flipcard*/
 
@@ -229,7 +237,7 @@ float: right;
     text-align: justify;
     border:1px solid #ae0dce;
     border-radius: 10px;
-    width: 50%;
+    width: 40%;
     height: 300px;
     float: left;
     transition : all 0.7s ease;
@@ -242,6 +250,23 @@ float: right;
 footer{
     text-align: center;
 }
+@media (max-width: 768px) {
+    #portada1{
+        width: 70%;
+    }
+    #portada2{
+        width: 25%;
+    }
+    .imgversiones{
+        width: 300px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    #contenedorvideo{
+        width: 300px;
+    }
+}
 </style>
 
 <body>
@@ -251,7 +276,6 @@ footer{
     </header>
     <nav>
         <ul>
-            <li><a href="">Tec-Run</a></li>
             <li><a href="">Algo-Code</a></li>
             <li><a href="index.html">Inicio</a></li>
         </ul>
@@ -265,10 +289,7 @@ footer{
                 </div>
                 <div id="portada2">
                     <h1>Tec-Run</h1>
-                    <p>Nuestro mas grande, tardado y novedoso proyecto, sin contar que viene otro en camino.
-                        Es un juego de estilo Runner enfocado a la gamificacion, el objetivo del juego aparte de solo entretener 
-                        es brindar educacion para niños de educacion basica primaria y primcipios de secundaria, reforzando su habilidad
-                        matematica asi como las operaciones basicas
+                    <p>PRIMERA VERSION
                     </p>
 
                     <a href="Assets/JUEGO/juego.apk" id="apk">DESCARGAR</a>
@@ -293,6 +314,22 @@ footer{
             
             </div>
 
+        </section>
+        <section id="Tec-Run_new_version">
+            <h1>Tec-Run Nueva version</h1>  
+
+                <img class="imgversiones" src="Assets/imgproyects/img_new1.jpeg">
+                    <a id="apk" href="Assets/JUEGO/morado_carretera.apk">DESCARGAR</a>
+
+                <img class="imgversiones" src="Assets/imgproyects/img_new2.jpeg">
+                    <a id="apk" href="Assets/JUEGO/Verde_carretera.apk">DESCARGAR</a> 
+
+                <img class="imgversiones" src="Assets/imgproyects/img_new3.jpeg">
+                    <a id="apk" href="Assets/JUEGO/Rosa_carretera.apk">DESCARGAR</a>          
+
+
+
+            
         </section>
 
         <section id="disenoPersonaje">
@@ -356,7 +393,7 @@ footer{
 
             <div id="jugabilidad">
                     <div id="contenedorvideo">
-                        <video controls autoplay id="videorunner">
+                        <video controls id="videorunner">
                             <source src="Assets/imgproyects/jugabilidad.mp4" type="video/mp4">
                         </video>
                     </div>

@@ -96,13 +96,16 @@ footer {
 
 @media (max-width: 768px) {
     header, nav, section, footer {
-        margin: 10px;
-        padding: 10px;
+        margin: 0;
+        padding: 0;
     }
     #logoheader {
         height: 80px;
         right: 10px;
         top: 10px;
+    }
+    nav{
+        height: 60px;
     }
     nav li {
         display: inline;
@@ -115,7 +118,9 @@ footer {
         flex-direction: column;
     }
     section {
-        width: 250px;
+        width: 225px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     h1 {
         font-size: 24px;
@@ -125,33 +130,7 @@ footer {
     }
     p {
         font-size: 14px;
+        margin: 20px;
     }
 }
 
-@media (max-width: 480px) {
-    header, nav, section, footer {
-        margin: 5px;
-        padding: 5px;
-    }
-    #logoheader {
-        height: 60px;
-        right: 5px;
-        top: 5px;
-    }
-    nav a {
-        font-size: 16px;
-    }
-    section {
-        width: 100%;
-        margin-top: 10px;
-    }
-    h1 {
-        font-size: 20px;
-    }
-    h2 {
-        font-size: 18px;
-    }
-    p {
-        font-size: 12px;
-    }
-}
