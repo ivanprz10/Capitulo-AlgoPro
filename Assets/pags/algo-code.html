@@ -3,9 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Algo-Code</title>
 </head>
+
+<style>
+     *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+body{
+    background-color: black;
+}
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ae0dce;
+    border-radius: 10px;   
+}
+header{
+    height: 130x;
+    display: flex;
+}
+h1{
+    color: white;
+}
+#logo{
+    height: 130px;
+    float: right;
+    margin-left: 200px;
+}
+nav{
+    height: 25px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+nav li{
+    display: inline;
+    margin-left: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    font-size: 25px;
+    color: #ae0dce;
+}
+#descRunn{
+    text-align: justify;
+}
+p{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#portada{
+    align-items: center;
+    border:1px solid #ae0dce;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+#portada1{
+    height: 400px;
+    width: 40%;
+    float: left;
+    background: url(../recursos_algo-code/fondoPrincipal.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+#portada2{
+    height: 400px;
+    width: 59%;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+#portada2:hover{
+    background-color: #ae0dce;
+}
+#apk{
+    border: 1px solid #ae0dce;
+    background-color: #000000;
+
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.7s ease;
+}
+#apk:hover{
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: black;
+}
+/*flipcard*/
+
+#disenoPersonaje{
+  height: 400px;
+  display: flex;
+  border: 1px solid #ae0dce;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around; /* Espacia los elementos equitativamente */
+}
+
+    /* Estilos para la tarjeta de volteo */
+#flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Efecto de perspectiva para el volteo */
+  border-radius: 10px;
+}
+
+/* Estilos para el interior de la tarjeta de volteo */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+
+}
+
+/* Estilos para la parte frontal de la tarjeta */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta la parte trasera de la tarjeta */
+  border-radius: 10px;
+
+}
+
+/* Estilos para la parte frontal de la tarjeta */
+.flip-card-front {
+  background-color: #bbb;
+  border-radius: 10px;
+  background-size: cover;
+  border: 1px solid #ae0dce;
+
+}
+#sprites1{
+  background: url(../recursos_algo-code/Delfin.png);
+  background-size: cover;
+
+}
+#sprites2{
+  background: url(../recursos_algo-code/mantaraya.png);
+  background-size: cover;
+
+}
+#sprites3{
+  background: url(../recursos_algo-code/estrella\ de\ mar.png);
+  background-size: cover;
+
+}
+
+
+/* Estilos para la parte trasera de la tarjeta */
+.flip-card-back {
+  background-color: #000000;
+  transform: rotateY(180deg); /* Voltea la parte trasera hacia atrás */
+  border-radius: 10px;
+  border: 1px solid #ae0dce;
+
+}
+
+/* Estilos para la tarjeta cuando se voltea */
+#flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 10px;
+
+}
+#paisaje1{
+  background: url(../recursos_algo-code/fondo1.jpg);
+  background-size: cover;
+
+}
+#paisaje2{
+  background: url(../recursos_algo-code/paisaje3.png);
+  background-size: cover;
+
+}
+#paisaje3{
+  background: url(../recursos_algo-code/paisaje2.png);
+  background-size: cover;
+
+}
+
+
+
+
+footer{
+    text-align: center;
+}
+</style>
+
+
 <body>
+
+    <header>
+        <h1>Capítulo Estudiantil ALGORITMIA & PROGRAMACION</h1>
+        <img id="logo" src="../recursos_algo-code/logocode.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Algo-Code</a></li>
+            <li><a href="../../index.html">Inicio</a></li>
+        </ul>
+    </nav>
+<main>
+
+    <section id="descRunn">
+        <h1>DESCRIPCION</h1>
+        <p>videojuego que impulse el desarrollo cognitivo en niños de 2 a 4 años.
+            asi mismo el juego desarrollara habilidades como lo son la destreza en rompecabezas, en reonocer figuras y adentrarse en el mundo
+            de los numeros, consatara de 4 niveles, rompecabezas, reconocimiento de numeros y reconocimiento de figuras geometricas
+
+        </p>
+    </section>
+
+    <section id="Algo-Code">
+        <h1>Algo-Code</h1>
+        <div id="portada">
+            <div id="portada1">
+            </div>
+            <div id="portada2">
+                <h1>Algo-Code</h1>
+                <p>PRIMERA VERSION <br> en esta version podras visualizar la version y a lo largo de tiempo las actualizaciones de desarrollo
+                </p>
+
+                <a href="" id="apk">DESCARGAR</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="disenoPersonaje">
+
+        <h1 >DISEÑOS DE PAISAJE</h1>
+        <div id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="paisaje1">
+              </div>
+              <div class="flip-card-back">
+                <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+                </p>
+              </div>
+            </div>
+        </div>
+        <div id="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" id="paisaje2">
+            </div>
+            <div class="flip-card-back">
+              <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" id="paisaje3">
+            </div>
+            <div class="flip-card-back">
+              <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+              </p>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <section id="disenoPersonaje">
+
+        <h1 >DISEÑOS DE PERSONAJE</h1>
+        <div id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="sprites1">
+              </div>
+              <div class="flip-card-back">
+                <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+                </p>
+              </div>
+            </div>
+        </div>
+        <div id="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" id="sprites2">
+            </div>
+            <div class="flip-card-back">
+              <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front" id="sprites3">
+            </div>
+            <div class="flip-card-back">
+              <p>DISEÑOS LLAMATIVOS PARA NUESTRO PUBLICO INFANTE
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+</main>
+<footer>
+    <p>&copy; 2024 Capítulo Estudiantil</p>
+
+</footer>
     
 </body>
 </html>
