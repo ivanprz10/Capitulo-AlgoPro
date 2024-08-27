@@ -1,0 +1,178 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: black;
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    border: 1px solid #ae0dce;
+    border-radius: 20px;
+    height: 300px;
+    margin: 5px;
+    text-align: right;
+    position: relative; 
+}
+
+#logoo {
+    width: 300px;
+    height: 300px;
+    padding: 0; 
+    margin-left: auto; 
+    margin-right: 200px; 
+}
+
+.titulo {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 80px;
+}
+
+#titulo2 {
+    top: 120px;
+    left: 200px;
+}   
+
+/* Estilos para la barra de navegación */
+nav {
+    margin-top: 20px;
+    border: 1px solid #ae0dce;
+    border-radius: 20px;
+    text-align: center;
+    height: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+li {
+    display: inline;
+    margin-right: 20px; /* Agregado */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 100px 0px 10px;
+    transition: all 0.3s ease;
+
+
+
+}
+nav a:hover{
+    font-size: 25px;
+    color: #ae0dce;
+    }
+
+/* Estilos para el contenedor de imágenes */
+.contenedor-imagenes {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #ae0dce;
+    border-radius: 10px;
+    display: flex; /* Mostrar imágenes en línea */
+    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan si no caben en una línea */
+    justify-content: center; /* Centrar imágenes horizontalmente */
+}
+
+/* Estilos para las imágenes */
+.imagenes {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; /* Cambiado a 50% para hacer círculos */
+    margin: 20px; /* Espacio entre imágenes */
+    transition: all 0.3s ease;
+
+}
+.imagenes:hover{
+    transform: scale(1.1);
+}
+/* Estilos para el pie de página */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+    background-color: #000000; /* Gris oscuro */
+    padding: 10px;
+    border-top: 1px solid  #ae0dce;
+    
+}
+.miembro {
+text-align: center; /* Centrar el texto debajo de la imagen */
+}
+
+.nombre {
+color: white;
+font-size: 16px;
+}
+
+.nombre a {
+color: white; /* Color del enlace */
+text-decoration: none; /* Eliminar subrayado del enlace */
+}
+/* Media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        text-align: center;
+    }
+
+    #logoo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto; /* Centrar la imagen */
+    }
+
+    .titulo {
+        font-size: 30px;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+
+    #titulo2 {
+        top: 100px;
+        left: 0;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .contenedor-imagenes {
+        flex-direction: column; /* Alinear imágenes en columna */
+    }
+
+    .imagenes {
+        height: 100px;
+        width: 100px;
+        margin: 10px; /* Reducir el espacio entre imágenes */
+    }
+
+    .nombre {
+        font-size: 14px;
+    }
+}
